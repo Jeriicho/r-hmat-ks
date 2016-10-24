@@ -1,4 +1,5 @@
-package Rühmatöö;
+import java.util.ArrayList;
+import java.util.List;
 
 abstract class Bussid implements Pileteid{
     private String lähtekoht;
@@ -28,4 +29,5 @@ abstract class Bussid implements Pileteid{
     public String getKuu() {
         return kuu;
     }
+    abstract List<AegHind> leiaVabuKohti() throws Exception;
 }
