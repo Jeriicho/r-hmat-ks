@@ -1,3 +1,5 @@
+package Rühmatöö;
+
 public class AegHind implements Comparable<AegHind>{
     private String aeg;
     private double hind;
