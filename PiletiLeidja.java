@@ -2,6 +2,7 @@ package Rühmatöö;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 public class PiletiLeidja {
     private String lähtekoht;
@@ -29,6 +30,8 @@ public class PiletiLeidja {
         return ajadHinnad;
     }
     public void prindiPiletid() throws Exception{
+        Random r = new Random();
+
         List<AegHind> ajadHinnad = leiaPiletid();
         Collections.sort(ajadHinnad);
         System.out.println("Sul on " + ajadHinnad.size() + " valikut:");
@@ -37,5 +40,7 @@ public class PiletiLeidja {
                                "Hind  : "  + aegHind.getHind() + "\n"+
                                "Buss  : " + aegHind.getBuss() + "\n");
         }
+        AegHind rbuss = ajadHinnad.get(r.nextInt(ajadHinnad.size()));
+        System.out.println("Soovitan sulle bussi " + rbuss.getBuss() + ", mis väljub kell " + rbuss.getAeg() + ".");
     }
 }
