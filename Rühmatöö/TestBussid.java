@@ -1,4 +1,3 @@
-
 package Rühmatöö;
 import java.util.Scanner;
 
@@ -23,6 +22,7 @@ public class TestBussid {
             else break;
         }
         System.out.println("Järgmise korrani!");
+        System.out.printf("Jõudu!");
     }
 }
     
