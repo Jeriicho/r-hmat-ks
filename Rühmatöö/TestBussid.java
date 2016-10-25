@@ -22,7 +22,7 @@ public class TestBussid {
             else break;
         }
         System.out.println("Järgmise korrani!");
-        System.out.printf("Jõudu!");
+        System.out.printf("Jõudu!!");
     }
 }
     
