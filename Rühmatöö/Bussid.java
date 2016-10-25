@@ -1,6 +1,5 @@
 package Rühmatöö;
 
-import java.util.ArrayList;
 import java.util.List;
 
 abstract class Bussid implements Pileteid{
